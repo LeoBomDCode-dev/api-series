@@ -1,1 +1,16 @@
-GET 
+### Variáveis de ambiente
+
+@Base_url = http://127.0.0.1:8000/
+
+### Teste de conexõ com a API
+GET {{Base_url}}/ HTTP/1.1
+Accept: application/json
+
+### Criação de uma série 
+POST {{Base_url}}/ HTTP/1.1
+Content-Type: application/application/json
+{
+    "titulo": "Rick and Morty",
+    "descricao": "Avô e neto em altas aventuras interdimensionais",
+    "ano_lancamento": 2013 
+}
